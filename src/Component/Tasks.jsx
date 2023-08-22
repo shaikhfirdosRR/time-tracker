@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { connect, useDispatch, useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { addTask } from "../Redux/action";
 import { useNavigate } from "react-router";
 
@@ -97,13 +97,5 @@ const Tasks = () => {
     </div>
   );
 };
-
-const mapStateToProps = (state) => ({
-  projects: state,
-});
-
-// const mapDispatchToProps = {
-//   addTask,
-// };
 
 export default Tasks;
